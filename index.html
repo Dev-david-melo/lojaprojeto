@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lojinha dos Encantados</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #F2921D;
+  color: #f1f1f1;
+  line-height: 1.6;
+}
+
+header {
+    align-items: center;
+    background-color: #012840; 
+    justify-content: center;
+    position:relative;
+    display:grid;
+    padding: 25px;
+  
+ 
+}
+header img {
+    width: 200px;
+    border-radius: 20%;
+    position:absolute;
+    margin:20px;
+}
+
+header h1 {
+  color: #ffcc00;
+  font-size: 2.5rem;
+}
+
+nav {
+  margin-top: 10px;
+  padding:5px;
+}
+
+nav a {
+  margin: 0 15px;
+  padding:5px;
+  color: #f1f1f1;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover{
+    background-color:aliceblue;
+    color:#012840;
+    border-radius: 5px;
+}
+section {
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+h2 {
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+}
+
+#historia p {
+  font-size: 1.1rem;
+  max-width: 800px;
+  margin: auto;
+  text-align: justify;
+}
+
+.galeria-grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.galeria-grid img {
+  width: 300px;
+  border-radius: 8px;
+  
+}
+
+.produtos-grid {
+  display:flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.galeria-grid img:hover{
+  transform: scale(1.05);
+  transition: 0.3s;
+}
+
+.produto {
+  background-color: #012840;
+  padding: 20px;
+  border-radius: 10px;
+  width: 220px;
+  text-align: center;
+  box-shadow: 0 0 10px #012840 ;
+}
+
+.produto img {
+  width: 100%;
+  border-radius: 6px;
+}
+
+.produto h3 {
+  margin: 15px 0 5px;
+  font-size: 1.1rem;
+}
+
+.produto p {
+  margin-bottom: 10px;
+  color: #ccc;
+}
+
+.produto button {
+  background-color: #ffcc00;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.produto:hover{
+  transform: scale(1.05);
+  transition: 0.3s;
+}
+
+.produto button:hover {
+  background-color: #e6b800;
+}
+
+footer {
+  background-color: #012840;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  color: #e6b800;
+}
+</style>
+<body>
+
+  <header>
+    <img src="imagens/logo2.jpg" alt="logo da equipe">
+    <h1>ENCANTADOS - <br> time de corrida</h1>
+    
+    <nav>
+      <a href="#historia">História</a>
+      <a href="#galeria">Galeria</a>
+      <a href="#produtos">Loja</a>
+    </nav>
+  </header>
+
+  <section id="historia">
+    <h2>Nossa História</h2>
+    <p>
+        "Encantados – Time de Corrida” é uma equipe que une a tradição popular às dinâmicas urbanas contemporâneas por meio de uma equipe de corrida de carrinhos de rolimã. Inspirado nas encantarias maranhenses e na musicalidade ritual do tambor de mina, o time cria um universo visual e conceitual na qual pilotos lendários, guiam seus carrinhos não apenas com técnica, mas com axé e ancestralidade.
+        Cada elemento visual do time representa a encantaria, expressos por meio de cores, formas e símbolos que dialogam com o sincretismo afro-indígena e com a estética vibrante da cultura popular maranhense. O projeto propõe não só o resgate simbólico dessas referências, como também a valorização do design como ferramenta de representação cultural, resistência e ludicidade.
+    </p>
+  </section>
+
+  <section id="galeria">
+    <h2>Galeria</h2>
+    <div class="galeria-grid">
+      <img src="imagens/capacete.jpg" alt="Capacete">
+      <img src="imagens/logouniforme.jpg" alt="Logo do Uniforme">
+      <img src="imagens/uniforme.jpg" alt="Uniforme completo do piloto">
+    </div>
+  </section>
+
+  <section id="produtos">
+    <h2>Produtos Oficiais</h2>
+    <div class="produtos-grid">
+      <div class="produto">
+        <img src="imagens/garrafa.jpg" alt="Garrafa">
+        <h3>Garrafa Encantados</h3>
+        <p>R$ 10,90</p>
+        <button>Comprar</button>
+      </div>
+      <div class="produto">
+        <img src="imagens/bone.jpg" alt="Boné">
+        <h3>Boné Encantados</h3>
+        <p>R$ 10,90</p>
+        <button>Comprar</button>
+      </div>
+      <div class="produto">
+        <img src="imagens/camisa.jpg" alt="Camisa">
+        <h3>Camiseta Encantados</h3>
+        <p>R$ 20,90</p>
+        <button>Comprar</button>
+      </div>
+      <div class="produto">
+        <img src="imagens/caneca.jpg" alt="Caneca">
+        <h3>Caneca Encantados</h3>
+        <p>R$ 9,90</p>
+        <button>Comprar</button>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 ENCANTADOS. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
