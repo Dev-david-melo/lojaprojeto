@@ -24,17 +24,10 @@ header {
     align-items: center;
     background-color: #012840; 
     justify-content: center;
-    position:relative;
     display:grid;
     padding: 25px;
   
  
-}
-header img {
-    width: 200px;
-    border-radius: 20%;
-    position:absolute;
-    margin:20px;
 }
 
 header h1 {
@@ -78,6 +71,23 @@ h2 {
   text-align: justify;
 }
 
+.logotipo {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.logotipo img {
+  width: 300px;
+  border-radius: 15%;
+  
+}
+.logotipo img:hover{
+  transform: scale(1.05);
+  transition: 0.3s;
+}
+
 .galeria-grid {
   display: flex;
   gap: 20px;
@@ -90,6 +100,13 @@ h2 {
   border-radius: 8px;
   
 }
+.galeria-grid img:hover{
+  transform: scale(1.05);
+  transition: 0.3s;
+}
+
+
+
 
 .produtos-grid {
   display:flex;
@@ -97,10 +114,7 @@ h2 {
   flex-wrap: wrap;
   justify-content: center;
 }
-.galeria-grid img:hover{
-  transform: scale(1.05);
-  transition: 0.3s;
-}
+
 
 .produto {
   background-color: #012840;
@@ -154,7 +168,7 @@ footer {
 <body>
 
   <header>
-    <img src="imagens/logo2.jpg" alt="logo da equipe">
+    
     <h1>ENCANTADOS - <br> time de corrida</h1>
     
     <nav>
@@ -170,6 +184,12 @@ footer {
         "Encantados – Time de Corrida” é uma equipe que une a tradição popular às dinâmicas urbanas contemporâneas por meio de uma equipe de corrida de carrinhos de rolimã. Inspirado nas encantarias maranhenses e na musicalidade ritual do tambor de mina, o time cria um universo visual e conceitual na qual pilotos lendários, guiam seus carrinhos não apenas com técnica, mas com axé e ancestralidade.
         Cada elemento visual do time representa a encantaria, expressos por meio de cores, formas e símbolos que dialogam com o sincretismo afro-indígena e com a estética vibrante da cultura popular maranhense. O projeto propõe não só o resgate simbólico dessas referências, como também a valorização do design como ferramenta de representação cultural, resistência e ludicidade.
     </p>
+  </section>
+  <section id="logo">
+    <h2>Logo da Equipe</h2>
+    <div class="logotipo">
+      <img src="imagens/logo2.jpg" alt="logo da equipe">
+    </div>
   </section>
 
   <section id="galeria">
